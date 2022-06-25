@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'com.apollographql.apollo'
 }
 
 android {
@@ -53,4 +54,7 @@ dependencies {
     api 'com.google.dagger:dagger-android-support:2.37'
 
 
+    //GraphQL
+    implementation "com.apollographql.apollo:apollo-runtime:2.5.9"
+    implementation "com.apollographql.apollo:apollo-api:2.5.9"
 }
